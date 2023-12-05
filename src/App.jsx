@@ -5,6 +5,9 @@ import UI from "./ui.svg";
 import Navigate from "./navigate.svg";
 import Security from "./security.svg";
 import Empower from "./empower.svg";
+import Discord from "./discord.svg";
+import Telegram from "./telegram.svg";
+import X from "./x.svg";
 
 import './App.css'
 
@@ -18,9 +21,9 @@ function App() {
               <img src={Logo} height={"100%"} width={"100%"}/>
             </div>
             <div className='nav-option'>
-              <h3>ABOUT US</h3>
-              <h3>FEATURES</h3>
-              <h3>SOCIALS</h3>
+              <a href="#about"><h3>ABOUT US</h3></a>
+              <a href="#feature"><h3>FEATURES</h3></a>
+              <a href="#socials"><h3>SOCIALS</h3></a>
             </div>
             <button className='btn-nav'>
                 Launch App
@@ -38,7 +41,7 @@ function App() {
             SCROLL
           </div>
      </div>
-     <div className='why-us'>
+     <div className='why-us' id="about">
         <div className='section-heading'>
           WHY US?
         </div>
@@ -46,7 +49,7 @@ function App() {
           <p>Based Jumper distinguishes itself in the cryptocurrency trading bot market with its comprehensive feature set, enhanced security, user-friendly interface, innovative trading tools, multi-chain and multi-exchange support, and future-proofing capabilities. These features collectively make it a robust and adaptable tool for various types of users in the crypto trading world.</p>
         </div>
      </div>
-     <div className='comprehensive'>
+     <div className='comprehensive' id="feature">
       <div className='image-section'>
         <img src={Comprehensive}/>
       </div>
@@ -128,11 +131,24 @@ even for beginners.            </p>
           </div>
       </div>
      </div>
-
+     <div style={{marginTop:"100px"}}>
+        <h1 className='section-heading' id="socials">Connect With Us</h1>
+        <div className='socials'>
+            <div className='Social-Img'>
+                <img src={Discord}/>
+            </div>
+            <div className='Social-Img'>
+              <img src={Telegram}/>
+            </div>
+            <div className='Social-Img'>
+              <img src={X}/>
+            </div>
+        </div>
+      </div>
      <footer>
         <div className='links'>
           <div>
-            <div>USEFUL LINKS </div>
+            <div className='heading-footer'>USEFUL LINKS </div>
             <div>Telegram Bot</div>
             <div>Buy $BASED</div>
             <div>Revenue Sharing</div>
@@ -140,17 +156,23 @@ even for beginners.            </p>
 
           </div> 
           <div>
-            <div>RESOURCES</div> 
+            <div className='heading-footer'>RESOURCES</div> 
             <div>Documentation</div>
             <div>Whitepaper</div>
             <div>Terms & Conditions</div>
             <div>Token Chart</div>
             </div>
-          <div>
-            <div>SOCIALS</div>
-            <div>Twitter</div>
-            <div>Discord</div>
-            <div>Telegram</div>
+          <div >
+            <div className='heading-footer'>SOCIALS</div>
+            <div onClick={()=>{
+              window.open()
+            }}>Twitter</div>
+            <div onClick={()=>{
+              window.open()
+            }}>Discord</div>
+            <div onClick={()=>{
+              window.open()
+            }}>Telegram</div>
           </div>
         </div>
         <div className='disclaimer'>

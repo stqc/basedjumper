@@ -279,3 +279,32 @@ footer{
     font-size: 2rem;
   }
 }
+
+.socials{
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-evenly;
+  gap:20px;
+  flex-wrap: wrap;
+}
+
+.Social-Img{
+  height: 75px;
+  width: 75px;
+  cursor: pointer;
+}
+
+.Social-Img>img{
+  height: 100%;
+  width: 100%;
+}
+
+.heading-footer{
+  color: orange;
+}
+
+.nav-option>a,.nav-option>a:hover{
+  text-decoration: none;
+  color: white;
+  user-select: none;
+}
