@@ -8,13 +8,38 @@ import Empower from "./empower.svg";
 import Discord from "./discord.svg";
 import Telegram from "./telegram.svg";
 import X from "./x.svg";
-
+import Zealy from "./Zealy Logo Mark B&W.svg";
 import './App.css'
 
 function App() {
 
   return (
     <>
+    <div className='mobile-menu' style={{justifyContent:"center",alignItems:"center",height:"100%", width:"100%",position:'fixed', display:'flex', backgroundColor:"#100C27",zIndex:"99",flexDirection:"column"}}>
+        <div style={{position:"absolute",top:0,width:"100%", height:"50px",textAlign:"right",right:"30px"}} className='section-heading'
+        onClick={(e)=>{
+            let y =window.document.getElementsByClassName("mobile-menu")[0]
+            y.style.transform="translateY(-200%)"
+        }}>
+          X
+        </div>
+        <a href="#about" onClick={()=>{
+          let y =window.document.getElementsByClassName("mobile-menu")[0]
+          y.style.transform="translateY(-200%)"
+        }}><h3>ABOUT US</h3></a>
+        <a href="#feature" onClick={()=>{
+          let y =window.document.getElementsByClassName("mobile-menu")[0]
+          y.style.transform="translateY(-200%)"
+        }}><h3>FEATURES</h3></a>
+        <a href="#socials" onClick={()=>{
+          let y =window.document.getElementsByClassName("mobile-menu")[0]
+          y.style.transform="translateY(-200%)"
+        }}><h3>SOCIALS</h3></a>
+        <button className='btn-nav' style={{marginTop:"50px"}}>
+                Launch App
+          </button>
+       
+    </div>
      <div className='hero'>
           <nav>
             <div className='log'>
@@ -28,6 +53,14 @@ function App() {
             <button className='btn-nav'>
                 Launch App
             </button>
+            <div className='menu-parent' onClick={()=>{
+              let y =window.document.getElementsByClassName("mobile-menu")[0]
+              y.style.transform="translateY(0%)"
+            }}>
+            <div className='menu'>
+              <div></div>
+            </div>
+            </div>
           </nav>
           <div className='heading'>
               <div className='elevate'>
@@ -134,13 +167,19 @@ even for beginners.            </p>
      <div style={{marginTop:"100px"}}>
         <h1 className='section-heading' id="socials">Connect With Us</h1>
         <div className='socials'>
-            <div className='Social-Img'>
+            <div className='Social-Img' onClick={()=>{
+              window.open('https://discord.gg/QqBU5kAn6h')
+            }}>
                 <img src={Discord}/>
             </div>
-            <div className='Social-Img'>
-              <img src={Telegram}/>
+            <div className='Social-Img' onClick={()=>{
+              window.open('https://zealy.io/c/basedjumper/questboard');
+            }}>
+              <img src={Zealy}/>
             </div>
-            <div className='Social-Img'>
+            <div className='Social-Img' onClick={()=>{
+              window.open('https://x.com/basedjumperbot?s=21&t=X2QEkPkj1NgUGHEH-KBWBQ')
+            }}>
               <img src={X}/>
             </div>
         </div>
@@ -165,14 +204,14 @@ even for beginners.            </p>
           <div >
             <div className='heading-footer'>SOCIALS</div>
             <div onClick={()=>{
-              window.open()
+              window.open('https://x.com/basedjumperbot?s=21&t=X2QEkPkj1NgUGHEH-KBWBQ')
             }}>Twitter</div>
             <div onClick={()=>{
-              window.open()
+              window.open('https://discord.gg/QqBU5kAn6h')
             }}>Discord</div>
             <div onClick={()=>{
-              window.open()
-            }}>Telegram</div>
+              window.open('https://zealy.io/c/basedjumper/questboard');
+            }}>Zealy</div>
           </div>
         </div>
         <div className='disclaimer'>

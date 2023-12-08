@@ -230,7 +230,9 @@ footer{
   color: white;
   margin-bottom:100px;
 }
-
+.menu-parent{
+  display: none;
+}
 @media screen and (max-width:950px){
 
   nav{
@@ -261,8 +263,12 @@ footer{
 
 }
 
+
 @media screen and (max-width:750px) {
-  .nav-option{display: none;}
+  nav>.btn-nav,.nav-option{display: none;}
+  .menu-parent{
+    display: initial;
+  }
   nav{
     max-width: 100%;
   }
@@ -303,8 +309,26 @@ footer{
   color: orange;
 }
 
-.nav-option>a,.nav-option>a:hover{
+.mobile-menu>a,.mobile-menu>a:hover,.nav-option>a,.nav-option>a:hover{
   text-decoration: none;
   color: white;
   user-select: none;
+}
+.mobile-menu{
+  transition: transform 1s;
+
+}
+.menu-parent{
+  padding: 5px;
+  border-radius: 10px;
+}
+.menu{
+  border-top:5px solid orange;
+  border-bottom: 5px solid orange;
+  width:40px;
+  height: 25px;
+}
+.menu>div{
+  border-bottom:5px solid orange;
+  height: 10px;
 }
