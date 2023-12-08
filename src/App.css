@@ -316,6 +316,7 @@ footer{
 }
 .mobile-menu{
   transition: transform 1s;
+  transform: translateY(-200%);
 
 }
 .menu-parent{
