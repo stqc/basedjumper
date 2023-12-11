@@ -6,7 +6,6 @@ import Navigate from "./navigate.svg";
 import Security from "./security.svg";
 import Empower from "./empower.svg";
 import Discord from "./discord.svg";
-import Telegram from "./telegram.svg";
 import X from "./x.svg";
 import Zealy from "./Zealy Logo Mark B&W.svg";
 import './App.css'
@@ -63,6 +62,7 @@ function App() {
             </div>
           </nav>
           <div className='heading'>
+          
               <div className='elevate'>
                 ELEVATE YOUR
               </div>
@@ -189,7 +189,7 @@ even for beginners.            </p>
           <div>
             <div className='heading-footer'>USEFUL LINKS </div>
             <div>Telegram Bot</div>
-            <div>Buy $BASED</div>
+            <div>Buy $JUMP  </div>
             <div>Revenue Sharing</div>
             <div>Scanner Channel</div>
 
