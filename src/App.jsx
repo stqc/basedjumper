@@ -139,7 +139,7 @@ knowing their information and funds are secure.</p>
                     </div>
           <div className='section-content-no-margin'>
             <p>
-            Like a seasoned astronaut navigating through space, Based Jumper guides its users through the complex world of cryptocurrency with ease and precision.            </p>
+            Like a seasoned astronaut navigating through space, Based Jumper guides its users through the complex world of cryptocurrency.            </p>
           </div>
       </div>
       <div className='image-section'>
@@ -160,7 +160,7 @@ knowing their information and funds are secure.</p>
 making complex trading operations simple and accessible
 even for beginners.            </p>
             <p>
-            Personalized Support: The platform offers personalized support and educational resources, helping users to navigate and            </p>
+            Personalized Support: The platform offers personalized support and educational resources, helping users to navigate across DISCORD | TELEGRAM | MOBILE</p>
           </div>
       </div>
      </div>
@@ -189,7 +189,7 @@ even for beginners.            </p>
           <div>
             <div className='heading-footer'>USEFUL LINKS </div>
             <div>Telegram Bot</div>
-            <div>Buy $JUMP  </div>
+            <div>Buy $JUMPER  </div>
             <div>Revenue Sharing</div>
             <div>Scanner Channel</div>
 
